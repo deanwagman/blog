@@ -7,13 +7,16 @@
        url('css/fonts/trench/Trench.ttf') format('truetype');
 }
 
-
 body{
 	background: url('images/background-mars.jpg') no-repeat center center fixed;
 	font-family: 'trench', 'Arial', sans-serif;
 }
 header{
-	background: url();
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto -100px auto;
+	background: url('images/astro.png') no-repeat center center;
+	background-size: cover;
 }
 h1,h2{
 	color: #FFF;
@@ -58,15 +61,29 @@ article .images{
 	margin: 0;
 }
 article img{
-	-webkit-filter: hue-rotate(90deg);
+	-webkit-filter: hue-rotate(90deg) contrast(200%);
 	max-height: 61.80469%;
 	z-index: -5;
 	position: absolute;
-	left: -60px;
+	left: -5%;
 	top: 19.1%;
+	-webkit-transition: all 1s ease 0;
+}
+article:hover .images{
+	-webkit-filter: hue-rotate(0) contrast(100%);
+	left: -20%;
 }
 .content, .images{
 	float: left;
+}
+
+article a{
+	font-size: 1.3em;
+	padding: 6px;
+	color: rgba(200,20,200,.8);
+	border: 2px solid rgba(200,20,200,.8);
+	border-radius: 3px;
+	text-decoration: none;
 }
 
 
