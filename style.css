@@ -1,5 +1,79 @@
 /* CSS Styles - Blog.DeanWagman.com */
 
+/* Fonts */
+@font-face {
+  font-family: 'trench';
+  src: url('css/fonts/trench/Trench.woff') format('woff'),
+       url('css/fonts/trench/Trench.ttf') format('truetype');
+}
+
+
 body{
-	background: url('images/background-mars.jpg');
+	background: url('images/background-mars.jpg') no-repeat center center fixed;
+	font-family: 'trench', 'Arial', sans-serif;
+}
+header{
+	background: url();
+}
+h1,h2{
+	color: #FFF;
+	border-bottom: 1px solid #FFF;
+}
+article{
+	display: block;
+	margin: 50px auto;
+	max-width: 1200px;
+	clear: both;
+	position: relative;
+}
+article .images, article .content, article .date{
+	box-shadow: 0 0 20px 5px rgba(0,0,0,.3);
+}
+
+article .content{
+	padding: 20px;
+	background: #FFF;
+	-webkit-column-count: 2;
+	line-height: 1.316em;
+}
+article .content h1{
+	-webkit-column-span: all;
+	color: #000;
+}
+article .date{
+	font-size: 2em;
+	width: 40px;
+	color: #FFF;
+	background-color: #000;
+	padding: 6px;
+	position: absolute;
+	z-index: -5;
+	right: -50px;
+	top: 0;
+	bottom: 0;
+	text-align: right;
+}
+article .images{
+	list-style: none;
+	margin: 0;
+}
+article img{
+	-webkit-filter: hue-rotate(90deg);
+	max-height: 61.80469%;
+	z-index: -5;
+	position: absolute;
+	left: -60px;
+	top: 19.1%;
+}
+.content, .images{
+	float: left;
+}
+
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
 }
