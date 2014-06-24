@@ -38,6 +38,7 @@ article{
 	display: block;
 	margin: 0 auto 100px auto;
 	max-width: 1200px;
+	width: 80%;
 	clear: both;
 	position: relative;
 	z-index: 10;
@@ -97,7 +98,7 @@ LIGHTBOX
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(200,20,200,.5);
+	background: linear-gradient(rgba(200,20,200,.75), rgba(250,20,150,.5));
 	z-index: 999;
 	position: fixed;
 	text-align: center;
@@ -109,8 +110,20 @@ LIGHTBOX
 }
 .active{
 	display: block;
-	-webkit-transition: all 2s ease 0;
+	/* Add Transition later */
 }
+
+
+/****************
+MEDIA QUERIES
+****************/
+
+@media screen and (max-width: 800px){
+	article .content: {
+		-webkit-column-count: 1;
+	}
+}
+
 
 
 /*****************
