@@ -41,7 +41,7 @@ article{
 	clear: both;
 	position: relative;
 }
-article .images, article .content, article .date{
+article .images, article .content, article .date, .modal img{
 	box-shadow: 0 0 20px 5px rgba(0,0,0,.3);
 }
 
@@ -83,9 +83,36 @@ article .images img{
 	float: left;
 }
 
+/******************
+LIGHTBOX
+******************/
+
+
+.lightbox{
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(200,20,200,.5);
+	z-index: 999;
+	position: fixed;
+	text-align: center;
+	-webkit-transition: all .5s ease-in 0;
+}
+.lightbox img{
+	max-height: 61.80469%;
+	position: relative;
+	margin: 10% auto;
+}
+
+
 /*****************
 UTILITIES
 *****************/
+
+
 
 .clearfix:after { 
    content: "."; 
