@@ -91,11 +91,11 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(231, 113, 43, 0.5)), color-stop(100%, rgba(136, 0, 204, 0.6))), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
-  background: -webkit-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
-  background: -moz-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
-  background: -o-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
-  background: linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(211, 84, 0, 0.5)), color-stop(100%, rgba(136, 0, 204, 0.6))), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
+  background: -webkit-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
+  background: -moz-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
+  background: -o-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
+  background: linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-m.png?1403993066') no-repeat center center fixed;
   background-size: auto, cover;
   background-repeat: no-repeat;
   font-family: 'Roboto', sans-serif;
@@ -103,62 +103,72 @@ body {
 @media screen and (min-width: 2000px) {
   /* line 39, ../sass/style.scss */
   body {
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(231, 113, 43, 0.5)), color-stop(100%, rgba(136, 0, 204, 0.6))), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
-    background: -webkit-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
-    background: -moz-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
-    background: -o-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
-    background: linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(211, 84, 0, 0.5)), color-stop(100%, rgba(136, 0, 204, 0.6))), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
+    background: -webkit-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
+    background: -moz-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
+    background: -o-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
+    background: linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-xl.png?1403992711') no-repeat center center fixed;
     background-size: cover;
   }
 }
 @media screen and (max-width: 1200px) {
   /* line 39, ../sass/style.scss */
   body {
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(231, 113, 43, 0.5)), color-stop(100%, rgba(136, 0, 204, 0.6))), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
-    background: -webkit-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
-    background: -moz-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
-    background: -o-linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
-    background: linear-gradient(rgba(231, 113, 43, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(211, 84, 0, 0.5)), color-stop(100%, rgba(136, 0, 204, 0.6))), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
+    background: -webkit-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
+    background: -moz-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
+    background: -o-linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
+    background: linear-gradient(rgba(211, 84, 0, 0.5), rgba(136, 0, 204, 0.6)), url('../img/background-mars-l.png?1403992869') no-repeat center center fixed;
     background-size: cover;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 39, ../sass/style.scss */
+  body {
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d35400), color-stop(100%, #8800cc));
+    background: -webkit-linear-gradient(#d35400, #8800cc);
+    background: -moz-linear-gradient(#d35400, #8800cc);
+    background: -o-linear-gradient(#d35400, #8800cc);
+    background: linear-gradient(#d35400, #8800cc);
   }
 }
 
 /**************
 	Menu
 **************/
-/* line 70, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 header {
   width: 100%;
   height: 200px;
 }
-/* line 73, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 header h1, header h2 {
   color: #FFF;
   border-left: 3px solid #FFF;
   padding: 10px;
   margin: 0 0 10px 0;
 }
-/* line 79, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 header h1, header h2, header ul {
   border-left: 3px solid #FFF;
 }
-/* line 82, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 header h1 {
   font-size: 3em;
   line-height: 1.5em;
   margin: 10px 0 10px 0;
 }
-/* line 86, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 header h2 {
   font-size: 1.75em;
   line-height: 1.71429em;
 }
-/* line 89, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 header ul {
   position: fixed;
   border-left: 3px solid #FFF;
 }
-/* line 92, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 header ul li a {
   font-size: 1.75em;
   line-height: 1.71429em;
@@ -171,41 +181,41 @@ header ul li a {
   color: #FFF;
   padding-left: 10px;
 }
-/* line 98, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 header ul li a:hover {
   border-left: 10px solid #26ff41;
 }
-/* line 101, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 header ul li a:active {
   color: #FF4C12;
 }
 @media screen and (max-width: 1600px) {
-  /* line 70, ../sass/style.scss */
+  /* line 76, ../sass/style.scss */
   header {
     height: 140px;
   }
-  /* line 107, ../sass/style.scss */
+  /* line 113, ../sass/style.scss */
   header h1, header h2 {
     display: inline-block;
   }
-  /* line 110, ../sass/style.scss */
+  /* line 116, ../sass/style.scss */
   header h2 {
     float: right;
     margin: 25px 50px 0 0;
   }
 }
 @media screen and (max-width: 1400px) {
-  /* line 70, ../sass/style.scss */
+  /* line 76, ../sass/style.scss */
   header {
     height: 130px;
     width: 80%;
     margin: 10px auto 10px auto;
   }
-  /* line 120, ../sass/style.scss */
+  /* line 126, ../sass/style.scss */
   header h2 {
     display: none;
   }
-  /* line 121, ../sass/style.scss */
+  /* line 127, ../sass/style.scss */
   header ul {
     margin: 0;
     padding: 0;
@@ -240,61 +250,61 @@ header ul li a:active {
   header ul li.last {
     padding-right: 0;
   }
-  /* line 127, ../sass/style.scss */
+  /* line 133, ../sass/style.scss */
   header ul li a {
     border-left: 3px solid #FFF;
   }
-  /* line 130, ../sass/style.scss */
+  /* line 136, ../sass/style.scss */
   header ul li a:hover {
     border-color: 3px solid #26ff41;
   }
 }
 @media screen and (max-width: 1000px) {
-  /* line 70, ../sass/style.scss */
+  /* line 76, ../sass/style.scss */
   header {
     padding: 0 0 0 10px;
     height: 100%;
   }
-  /* line 136, ../sass/style.scss */
+  /* line 142, ../sass/style.scss */
   header h1, header ul {
     display: block;
     float: none;
   }
-  /* line 140, ../sass/style.scss */
+  /* line 146, ../sass/style.scss */
   header ul {
     margin: 10px 0 10px 0;
   }
-  /* line 142, ../sass/style.scss */
+  /* line 148, ../sass/style.scss */
   header ul li a {
     font-size: 1.5em;
     line-height: 2em;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 70, ../sass/style.scss */
+  /* line 76, ../sass/style.scss */
   header {
     width: 100%;
     padding: 0;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 70, ../sass/style.scss */
+  /* line 76, ../sass/style.scss */
   header {
     height: 100%;
     width: 100%;
   }
-  /* line 154, ../sass/style.scss */
+  /* line 160, ../sass/style.scss */
   header ul li {
     width: 100%;
     padding: 0;
   }
-  /* line 158, ../sass/style.scss */
+  /* line 164, ../sass/style.scss */
   header ul li a {
     padding: 0 0 0 10px;
   }
 }
 
-/* line 166, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 h1, h2, h3, footer, a {
   font-family: 'trench', sans-serif;
 }
@@ -302,7 +312,7 @@ h1, h2, h3, footer, a {
 /***********
 	Blog
 ***********/
-/* line 175, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 article {
   margin: 0 auto 100px auto;
   max-width: 1200px;
@@ -315,17 +325,17 @@ article {
   transition: all 0.75s ease 0;
 }
 @media screen and (max-width: 800px) {
-  /* line 175, ../sass/style.scss */
+  /* line 181, ../sass/style.scss */
   article {
     width: 100%;
     margin: 0 0 60px 0;
   }
 }
-/* line 188, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 article .content, article .date {
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
 }
-/* line 193, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 article .content {
   padding: 20px 40px 20px 20px;
   background: #FFF;
@@ -341,7 +351,7 @@ article .content {
   column-gap: 2em;
 }
 @media screen and (max-width: 1000px) {
-  /* line 193, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   article .content {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -351,17 +361,17 @@ article .content {
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 193, ../sass/style.scss */
+  /* line 199, ../sass/style.scss */
   article .content {
     padding: 10px;
   }
-  /* line 204, ../sass/style.scss */
+  /* line 210, ../sass/style.scss */
   article .content h1 {
     font-size: 1.5em;
     line-height: 2em;
   }
 }
-/* line 209, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 article .content h1 {
   font-size: 2.25em;
   line-height: 1.33333em;
@@ -373,23 +383,23 @@ article .content h1 {
   margin-bottom: 0.66667em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-/* line 216, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 article .content h2 {
   font-size: 1.5em;
   line-height: 2em;
   margin-bottom: 1em;
 }
-/* line 221, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 article .content p {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
-/* line 226, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 article .content img {
   max-width: 100%;
   border-right: 4px solid #000;
 }
-/* line 234, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 article .date {
   width: 40px;
   color: #FFF;
@@ -406,7 +416,7 @@ article .date {
   text-align: right;
 }
 @media screen and (max-width: 800px) {
-  /* line 234, ../sass/style.scss */
+  /* line 240, ../sass/style.scss */
   article .date {
     display: none;
   }
@@ -415,7 +425,7 @@ article .date {
 /***************
 	Footer
 ***************/
-/* line 255, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .blog-footer {
   display: -webkit-flex;
   display: flex;
@@ -426,7 +436,7 @@ article .date {
   color: #FFF;
 }
 @media screen and (max-width: 500px) {
-  /* line 255, ../sass/style.scss */
+  /* line 261, ../sass/style.scss */
   .blog-footer {
     display: -webkit-flex;
     display: flex;
@@ -434,7 +444,7 @@ article .date {
     flex-direction: column;
   }
 }
-/* line 264, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .blog-footer .pagination {
   margin: auto;
   border-left: 3px solid #FFF;
@@ -446,12 +456,12 @@ article .date {
   transition: all 0.25s ease 0;
 }
 @media screen and (max-width: 910px) {
-  /* line 264, ../sass/style.scss */
+  /* line 270, ../sass/style.scss */
   .blog-footer .pagination {
     padding: 0 5px;
   }
 }
-/* line 272, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .blog-footer .pagination:hover {
   color: #26ff41;
   border-color: #26ff41;
@@ -481,7 +491,7 @@ article .date {
   background-position: 0 -32px;
 }
 
-/* line 285, ../sass/style.scss */
+/* line 291, ../sass/style.scss */
 .social {
   margin: 0;
   padding: 0;
@@ -516,7 +526,7 @@ article .date {
 .social li.last {
   padding-right: 0;
 }
-/* line 291, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .social a {
   display: block;
   width: 32px;
@@ -526,7 +536,7 @@ article .date {
   text-align: left;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .lightbox {
   display: none;
   position: absolute;
@@ -544,19 +554,19 @@ article .date {
   text-align: center;
   padding: 5%;
 }
-/* line 314, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 .lightbox img {
   max-height: 100%;
   max-width: 100%;
   box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* line 322, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .active {
   display: block;
 }
 
-/* line 325, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 .transparent {
   opacity: .3;
 }
