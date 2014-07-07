@@ -396,7 +396,7 @@ article .content p {
 /* line 239, ../sass/style.scss */
 article .content img {
   max-width: 100%;
-  border-right: 4px solid #000;
+  border-right: 8px solid #000;
 }
 /* line 243, ../sass/style.scss */
 article .content ul, article .content ol {
