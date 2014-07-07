@@ -1,0 +1,355 @@
+
+/* Compass Modules */
+ @import "compass/reset/";
+ @import "compass/css3";
+ @import "compass/typography/vertical_rhythm";
+ @import "compass/typography/lists/horizontal-list";
+ @import "compass/utilities";
+ @import "flexr";
+ 
+
+// Variables
+
+	// Compass Variables
+	$base-font-size: 16px;
+	$base-line-height: 24px;
+	@include establish-baseline;
+	$experimental-support-for-opera: false;
+
+	// My Variables
+	$boxShadow: rgba(0,0,0,.3);
+	$lightBoxColor: rgba(200,20,200,.8);
+	$purple: hsla(280, 100%, 40%, 1);
+	$green: #26FF41;
+
+// Fonts
+@include font-face("trench", 
+	font-files(
+		'trench/Trench.woff',
+		'trench/Trench.ttf',
+		'trench/Trench.svg',
+	'trench.eot'));
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/* Body */
+
+html{min-height: 100%;}
+
+body{
+	height: 100%;
+	width: 100%;
+	// Load in the Medium BG
+	@include background(linear-gradient(rgba(211, 84, 0, .5), 
+										hsla(280, 100%, 40%, .6)),
+						image-url('background-mars-m.png') no-repeat center center fixed);
+	background-size: auto, cover;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+	
+	// Load in the XL BG for large monitors
+	@media screen and (min-width: 2000px){
+		@include background(linear-gradient(rgba(211, 84, 0, .5), 
+											hsla(280, 100%, 40%, .6)),
+							image-url('background-mars-xl.png') no-repeat center center fixed);
+		background-size: auto, cover;
+	}
+	
+	// Load in the Large BG for desktop/laptop
+	@media screen and (max-width: 1200px){
+		@include background(linear-gradient(rgba(211, 84, 0, .5), 
+											hsla(280, 100%, 40%, .6)),
+							image-url('background-mars-l.png') no-repeat center center fixed);
+		background-size: auto, cover;
+	}
+
+	// We don't need no background image for mobile.
+	@media screen and (max-width: 700px){
+		@include background(linear-gradient(rgba(211, 84, 0, 1), 
+											hsla(280, 100%, 40%, 1)));
+	}
+}
+
+/**************
+	Menu
+**************/
+header{
+	width: 100%;
+	height: 180px;
+	h1,h2,ul{
+		border-left: 3px solid #FFF;
+	}
+	h1,h2{
+		color: #FFF;
+  		padding: 10px;
+  		margin: 0 0 10px 0;
+  		text-shadow: 0 0 5px rgba(0,0,0,.3);
+	}
+	h1{
+		@include adjust-font-size-to(48px);
+		margin: 10px 0 10px 0;
+	}
+	h2{
+		@include adjust-font-size-to(28px);
+	}
+	ul{
+		position: fixed;
+		li{
+			margin: 6px;
+		}
+		li a{
+			@include adjust-font-size-to(28px);
+			color: #FFF;
+			text-decoration: none;
+			font-size: 1.34em;
+			padding: 10px;
+			&:hover{
+				border-left:5px solid $green;
+			}
+			&:active{
+				border-left:3px solid $purple;
+			}
+		}
+	}
+	@media screen and (max-width: 1600px) {
+		h1,h2{
+			display: inline-block;
+		}
+		h2{
+			float: right;
+			margin: 20px 50px 0 0;
+		}
+		height: 108px;
+	}
+	@media screen and (max-width: 1400px) {
+		height: 110px;
+		width: 80%;
+		margin: 10px auto 10px auto;
+		h2{display: none;}
+		ul{
+			@include horizontal-list;
+			position: static;
+			float: right;
+			margin: 35px auto 0 auto;
+			border-left: none;
+			li a{
+				border-left: 3px solid #FFF;
+			}
+			li a:hover{
+				border-color: 3px solid $green;
+			}
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		h1,ul{
+			display: block;
+			float: none;
+		}
+		ul{
+			margin: 10px 0 10px 0;
+			li a{
+				@include adjust-font-size-to(24px);
+			}
+		}
+		padding: 0 0 0 10px;
+		height: 100%;
+	}
+	@media screen and (max-width: 800px){
+		width: 100%;
+		padding: 0;
+	}
+	@media screen and (max-width: 500px){
+		ul li{
+			padding: 5px;
+		}
+		ul li a{
+			padding: 0 0 0 5px;
+		}
+		ul{
+			margin: 0;
+		}
+		height: 100%;
+		width: 100%;
+		padding: none;
+	}
+}
+/*
+h1,h2,h3,footer,a{
+	font-family: 'trench', sans-serif;
+}
+*/
+/***********
+	Blog
+***********/
+
+// Article (Content,Date)
+article{
+	margin: 0 auto 100px auto;
+	max-width: 1200px;
+	width: 80%;
+	position: relative;
+	@include transition(all .75s cubic-bezier(.71,0,.35,1) 0);
+
+
+	@media screen and (max-width: 800px){
+		width: 100%;
+		margin: 0 0 60px 0;
+	}
+
+	.content, .date{
+		box-shadow: 0 0 20px 5px $boxShadow;
+	}
+
+	// The Main content area of an article
+	.content{
+		padding: 20px 40px 20px 20px;
+		background: #FFF;
+		@include column-count(2);
+		@include column-gap(2em);
+
+		@media screen and (max-width: 1000px){
+			@include column-count(1);
+		}
+		@media screen and (max-width: 600px) {
+			padding: 10px;
+			h1{
+				@include adjust-font-size-to(24px);
+			}
+		}
+
+		h1{
+			@include adjust-font-size-to(36px);
+			@include column-span(all);
+			margin-bottom: rhythm(1, 36px);
+			border-bottom: 1px solid rgba(0,0,0,.3);
+		}
+
+		h2{
+			@include adjust-font-size-to(24px);
+			margin-bottom: rhythm(1, 24px);
+		}
+
+		p{
+			@include leader;
+			@include trailer;
+		}
+
+		img{
+			max-width: 100%;
+			border-right: 4px solid #000;
+		}
+
+
+	}
+	// The Date Black bar on the right of Articles
+	.date{
+		width: 40px;
+		color: #FFF;
+		@include adjust-font-size-to(36px);
+		overflow: hidden;
+		background-color: #000;
+		padding: 20px 6px 6px 6px;
+		position: absolute;
+		z-index: 5;
+		right: -50px;
+		top: 0;
+		bottom: 0;
+		text-align: right;
+		@media screen and (max-width: 800px){
+			display: none;
+		}
+	}
+}
+article:last-of-type{
+	margin: 0 auto 0 auto;
+}
+
+
+/***************
+	Footer
+***************/
+.blog-footer{
+	@include flexr;
+	width: 100%;
+	height: 150px;
+	@include adjust-font-size-to(24px);
+	color: #FFF;
+	@media screen and (max-width: 500px) {
+		@include flexr($direction: column);
+	}
+	.pagination{
+		margin: auto;
+		border-left: 3px solid #FFF;
+		padding: 0 20px 0 20px;
+		@media screen and (max-width: 910px) {
+			padding: 0 5px;
+		}
+		&:hover{
+			color: $green;
+			border-color: $green;
+			border-left: 5px solid $green;
+		}
+		&:active{
+			border-left: 0;
+			color: #FFF;
+		}
+	}
+}
+
+/********
+  Social
+********/
+@import "social/*.png";
+@include all-social-sprites;
+.social{
+	@include horizontal-list($padding: 15px);
+	width: 156px;
+	margin: auto;
+	display: inline-block;
+	clear: both;
+	a{
+		display: block;
+		width: 32px;
+		height: 32px;
+		@include hide-text;
+	}
+}
+
+
+
+// Lightbox for clicked images
+.lightbox{
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	@include background(linear-gradient($lightBoxColor, rgba(200,20,200,.3)));
+	z-index: 999;
+	position: fixed;
+	text-align: center;
+	padding: 5%;
+	img{
+		max-height: 100%;
+		max-width: 100%;
+		box-shadow: 0 0 20px 5px $boxShadow;
+	}
+}
+
+//Lightbox utility
+.active{
+	display: block;
+}
+.transparent{
+	opacity: .3;
+	@include transform(scale(.85));
+}
+header a, .pagination a{
+	text-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+
+/****************
+	About
+****************/
+
