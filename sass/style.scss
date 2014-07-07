@@ -17,7 +17,7 @@
 	$experimental-support-for-opera: false;
 
 	// My Variables
-	$boxShadow: rgba(0,0,0,.3);
+	$boxShadow: rgba(0,0,0,.5);
 	$lightBoxColor: rgba(200,20,200,.8);
 	$purple: hsla(280, 100%, 40%, 1);
 	$green: #26FF41;
@@ -188,7 +188,7 @@ article{
 	max-width: 1200px;
 	width: 80%;
 	position: relative;
-	@include transition(all .75s cubic-bezier(.71,0,.35,1) 0);
+	@include transition(all .3s cubic-bezier(.71,0,.35,1) 0);
 
 
 	@media screen and (max-width: 800px){
@@ -196,9 +196,7 @@ article{
 		margin: 0 0 60px 0;
 	}
 
-	.content, .date{
-		box-shadow: 0 0 20px 5px $boxShadow;
-	}
+	box-shadow: 0 0 20px 5px $boxShadow;
 
 	// The Main content area of an article
 	.content{
@@ -360,6 +358,7 @@ article:last-of-type{
 .transparent{
 	opacity: .3;
 	@include transform(scale(.85));
+	box-shadow: none;
 }
 header a, .pagination a{
 	text-shadow: 0 0 5px rgba(0,0,0,.3);
