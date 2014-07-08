@@ -273,13 +273,15 @@ article::after{
 	opacity: .6;
 }
 article:last-of-type::after{
-	content: "";
+	content: none;
 }
-
-
 
 article:last-of-type{
 	margin: 0 auto 0 auto;
+}
+
+article:only-of-type{
+	margin: 0 auto 100px auto;
 }
 
 
