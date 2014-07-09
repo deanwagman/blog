@@ -4,6 +4,7 @@
  @import "compass/css3";
  @import "compass/typography/vertical_rhythm";
  @import "compass/typography/lists/horizontal-list";
+ @import "compass/typography/links/link-colors";
  @import "compass/utilities";
  @import "flexr";
  
@@ -185,7 +186,9 @@ article{
 	width: 80%;
 	position: relative;
 	@include transition(all .3s cubic-bezier(.71,0,.35,1) 0);
-
+	a{
+		@include link-colors($purple, $green, #333333, #111111, $green);
+	}
 
 	@media screen and (max-width: 800px){
 		width: 100%;
