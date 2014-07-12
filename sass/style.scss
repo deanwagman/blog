@@ -38,7 +38,6 @@
 html{min-height: 100%;}
 
 body{
-	height: 100%;
 	width: 100%;
 	// Load in the Medium BG
 	@include background(linear-gradient(rgba(211, 84, 0, .5), 
@@ -127,6 +126,9 @@ header{
 		width: 80%;
 		margin: 10px auto 10px auto;
 		h2{display: none;}
+		h1{
+			float: left;
+		}
 		ul{
 			@include horizontal-list;
 			position: static;
@@ -153,7 +155,7 @@ header{
 			}
 		}
 		padding: 0 0 0 10px;
-		height: 100%;
+		height: 170px;
 	}
 	@media screen and (max-width: 800px){
 		width: 100%;
@@ -169,9 +171,6 @@ header{
 		ul{
 			margin: 0;
 		}
-		height: 100%;
-		width: 100%;
-		padding: none;
 	}
 }
 
@@ -283,9 +282,6 @@ article:last-of-type{
 	margin: 0 auto 0 auto;
 }
 
-article:only-of-type{
-	margin: 0 auto 100px auto;
-}
 
 
 /***************
@@ -305,25 +301,20 @@ article:only-of-type{
 		.pagination{
 			width: 200px;
 			height: 50px;
-			border: 3px solid #FFF;
 			text-align: center;
 			margin: 10px auto;
 		}
 	}
 	.pagination{
 		margin: auto;
-		border-left: 3px solid #FFF;
 		padding: 0 20px 0 20px;
 		@media screen and (max-width: 910px) {
 			padding: 0 5px;
 		}
 		&:hover{
 			color: $green;
-			border-color: $green;
-			border-left: 5px solid $green;
 		}
 		&:active{
-			border-left: 0;
 			color: #FFF;
 		}
 	}
@@ -395,10 +386,22 @@ header a, .pagination a{
 }
 
 /****************
-	About
+	Contact
 ****************/
 
+.contact-article{
+	max-width: 800px;
+	@include transition(all .5s cubic-bezier(.71,0,.35,1) .2s);
+}
+article .contact-content{
+	@include column-count(1);
+}
 
+// 404 page
+.fourOhFour{
+	max-width: 600px;
+	@include column-count(1);
+}
 
 
 
