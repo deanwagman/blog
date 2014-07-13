@@ -163,16 +163,23 @@ header{
 	@media screen and (max-width: 800px){
 		width: 100%;
 		padding: 0;
+		li a{
+			@include adjust-font-size-to(18px);
+		}
 	}
 	@media screen and (max-width: 500px){
 		ul li{
-			padding: 5px;
+			padding: 0px;
 		}
 		ul li a{
-			padding: 0 0 0 5px;
+			padding: 2px;
+			border-left: 1px solid #FFF;
 		}
 		ul{
 			margin: 0;
+		}
+		h1{
+			@include adjust-font-size-to(36px);
 		}
 	}
 }
