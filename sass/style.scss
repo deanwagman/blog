@@ -24,12 +24,15 @@
 	$green: #26FF41;
 
 // Fonts
+
+/*
 @include font-face("trench", 
 	font-files(
 		'trench/Trench.woff',
 		'trench/Trench.ttf',
 		'trench/Trench.svg',
 	'trench.eot'));
+*/
 
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
@@ -264,7 +267,7 @@ article{
 }
 
 article::after{
-	content: image-url('social/arrow-down.png');
+	content: inline-image('social/arrow-down.png');
 	bottom: -60px;
 	right: 0;
 	left: 0;
