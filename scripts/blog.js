@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
             article = $(this);
             offset = article.offset();
             // Conditional to see if article's 15% in view
-            if (offset.top >  win.scrollTop() + win.height() - (win.height() * 0.25)) {
+            if (offset.top >  win.scrollTop() + win.height() - (win.height() / 4)) {
                 article.addClass('transparent');
             } else {
                 article.removeClass('transparent');
@@ -28,12 +28,11 @@ jQuery(document).ready(function ($) {
         var src, img, box;
         src = $(this).attr('src');
         img = $("<img></img>").attr('src', src);
-        box = $('.lightbox')
-            .empty()
-            .append(img)
-            .addClass('active');
+        box = $('<div class="lightbox"></div>')
+            .append(img);
+        $('body').append(box);
         box.on('click', function () {
-            box.removeClass('active');
+            $('.lightbox').remove();
         });
     });
 
