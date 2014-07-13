@@ -276,7 +276,11 @@ article::after{
 	height: 32px;
 	margin: auto;
 	opacity: .6;
+	@media screen and (max-width:800px) {
+		bottom: -30px;
+	}
 }
+
 article:last-of-type::after{
 	content: none;
 }
