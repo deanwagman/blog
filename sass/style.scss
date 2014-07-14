@@ -142,7 +142,7 @@ header{
 				border-left: 3px solid #FFF;
 			}
 			li a:hover{
-				border-color: 3px solid $green;
+				border-left: 3px solid $green;
 			}
 		}
 	}
@@ -169,11 +169,14 @@ header{
 	}
 	@media screen and (max-width: 500px){
 		ul li{
-			padding: 0px;
+			padding: 0;
 		}
 		ul li a{
-			padding: 2px;
+			padding: 0;
 			border-left: 1px solid #FFF;
+			&:last-child{
+				padding-right: 0;
+			}
 		}
 		ul{
 			margin: 0;
@@ -181,6 +184,7 @@ header{
 		h1{
 			@include adjust-font-size-to(36px);
 		}
+		height: 140px;
 	}
 }
 
@@ -414,6 +418,35 @@ article .contact-content{
 .fourOhFour{
 	max-width: 600px;
 	@include column-count(1);
+}
+
+input[type=text],input[type=email],input[type=submit],textarea{
+	height: 35px;
+	width: 90%;
+	max-width: 800px;
+	margin: 10px auto;
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.3);
+	border: 1px solid rgba(0,0,0,.1);
+	background: rgba(20,230,100,.15);
+}
+input[type=submit]{
+	box-shadow: 0 3px 5px rgba(0,0,0,.3);
+	background: rgba(20,230,100,.5);
+}
+::input-placeholder, input, textarea,::-webkit-input-placeholder,
+::-moz-placeholder,
+{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4em;
+}
+input:focus{
+	border: 2px solid $purple;
+}
+textarea{
+	height: 300px;
+}
+.help-inline, .help-block{
+	color: red;
 }
 
 
